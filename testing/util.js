@@ -1,5 +1,6 @@
 'use strict';
 
+
 exports.get_cgm_record = function() {
   var dateobj = new Date();
   var datemil = dateobj.getTime();
