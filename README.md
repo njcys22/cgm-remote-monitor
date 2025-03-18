@@ -231,6 +231,7 @@ Once you've installed Nightscout, you can access API documentation by loading `/
 The API is Swagger enabled, so you can generate client code to make working with the API easy.
 To learn more about the Nightscout API, visit https://YOUR-SITE.com/api-docs/ or review [swagger.yaml](lib/server/swagger.yaml).
 
+
 ## Environment
 
 `VARIABLE` (default) - description
