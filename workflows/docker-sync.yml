@@ -1,0 +1,21 @@
+name: Sync Docker Image to Private Registry
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t github.com/user/repo/image:latest .
+
+      - name: Push to Private Registry
+        run: |
+          docker tag github.com/user/repo/image:latest localhost:5000/my-private-repo/image:latest
+          docker push localhost:5000/my-private-repo/image:latest
+        env:
+          DOCKER_HOST: tcp://localhost:5000
