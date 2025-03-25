@@ -30,3 +30,4 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: njcys22/cgm-remote-monitor:latest
+        
