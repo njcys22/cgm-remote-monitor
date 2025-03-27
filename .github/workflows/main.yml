@@ -88,3 +88,4 @@ jobs:
           tags: |
             ${{ env.DOCKER_IMAGE }}:${{ steps.package-version.outputs.current-version }}
             ${{ env.DOCKER_IMAGE }}:latest
+            
