@@ -50,8 +50,8 @@ jobs:
       - name: Set DOCKER_REPO_TAGGED based on branch or tag
         # echo "DOCKER_REPO_TAGGED=$(echo ghcr.io/${{ github.repository_owner }}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
         run: |
-          echo "GHCR_TAGGED=$(echo ghcr.io/${{ github.repository_owner }}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-          echo "DOCKERHUB_TAGGED=$(echo ${{secrets.DOCKERHUB_USERNAME}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "GHCR_TAGGED=$(echo ghcr.io/${{ chenyongsheng22@126.com }}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "DOCKERHUB_TAGGED=$(echo ${{15312070476@189.cn}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
           echo "ALIYUN_TAGGED=$(echo registry.cn-guangzhou.aliyuncs.com/${{secrets.ALIYUN_BASENAME}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       # 构建并推送镜像
       - name: Build and push Docker images
