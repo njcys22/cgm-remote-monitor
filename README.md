@@ -820,6 +820,7 @@ Feel free to [post an issue][issues], but read the [wiki][wiki] first.
 License
 ---------------
 
+
 [agpl-3]: http://www.gnu.org/licenses/agpl-3.0.txt
 
     cgm-remote-monitor - web app to broadcast cgm readings
