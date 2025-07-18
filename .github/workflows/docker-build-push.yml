@@ -19,11 +19,11 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1 
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{njcys}}
+        password: ${{ Cys750612@ }}
  
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: yourusername/yourimage:latest
+        tags: njcys/njcys:latest
