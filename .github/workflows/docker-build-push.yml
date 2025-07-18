@@ -19,11 +19,11 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1 
       with:
-        username: ${{njcys}}
-        password: ${{ Cys750612@ }}
+        username: ${{njcys73}}
+        password: ${{ dckr_pat_NqFIQTf60b3cEctAzloU3jYGXE4}}
  
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: njcys/njcys:latest
+        tags: njcys73/njcys73:latest
