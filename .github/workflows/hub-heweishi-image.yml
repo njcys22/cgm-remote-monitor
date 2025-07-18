@@ -38,21 +38,21 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
-          username: ${{ 15312070476@189.cn }}
+          username: ${{ njcys }}
           password: ${{ cys750612@ }}
       # 登录阿里云容器镜像服务
       - name: Login to Aliyun Container Registry
         uses: docker/login-action@v3
         with:
-          registry: registry.cn-guangzhou.aliyuncs.com
-          username: ${{ secrets.ALIYUN_USERNAME }}
-          password: ${{ secrets.ALIYUN_PASSWORD }}
+          registry: registry.cn-beijing.aliyuncs.com
+          username: ${{ chenyongsheng22@163.com }}
+          password: ${{ Cys750612@ }}
       - name: Set DOCKER_REPO_TAGGED based on branch or tag
         # echo "DOCKER_REPO_TAGGED=$(echo ghcr.io/${{ github.repository_owner }}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
         run: |
           echo "GHCR_TAGGED=$(echo ghcr.io/${{ chenyongsheng22@126.com }}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-          echo "DOCKERHUB_TAGGED=$(echo ${{15312070476@189.cn}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
-          echo "ALIYUN_TAGGED=$(echo registry.cn-guangzhou.aliyuncs.com/${{secrets.ALIYUN_BASENAME}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "DOCKERHUB_TAGGED=$(echo ${{njcys}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "ALIYUN_TAGGED=$(echoregistry.chenyongsheng22@163.com registry.cn-beijing.aliyuncs.com/${{Cys750612@}}/hubheweishi:initial | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
       # 构建并推送镜像
       - name: Build and push Docker images
         uses: docker/build-push-action@v5
