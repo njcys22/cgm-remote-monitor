@@ -1,0 +1,30 @@
+name: Docker Build and Push
+ 
+on:
+  push:
+    branches:
+      - main  # 触发分支，可以根据需要修改
+ 
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+ 
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+ 
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ njcys73 }}
+        password: ${{ dckr_pat_NqFIQTf60b3cEctAzloU3jYGXE4 }}
+ 
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags: njcys73/njcys73:latest
