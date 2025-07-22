@@ -1,3 +1,4 @@
+docker build --no-cache -t your-image-name .
 FROM node:16.16.0-alpine
 
 
