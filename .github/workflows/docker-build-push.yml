@@ -27,4 +27,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: njcys73/njcys73:latest
+        tags: 15312070476@189.cn/njcys73:latest
